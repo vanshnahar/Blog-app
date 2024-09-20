@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="text/javascript"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        height: 100vh;
+        width: 100vw;
+    }
+    h2 {
+        color: #101011;
+    }
+    div {
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .heading{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            font-weight: 4080;
+            color: white;
+        }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+            padding: 10px 20px;
+            color: #100d0d;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid blueviolet;
+        }
+        button:hover {
+            background-color: rgb(84, 6, 88);
+            color:white;
+            border: 1px solid white;
+        }
+        .container{
+            background-color: rgb(84, 6, 88)
+;        }
+    #medicalRecords {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+  <center class="head-but">
+    <a href="index.html"><button>Register Patient</button></a>
+    <a href="doctor.html"><button>Change Adress</button></a>
+    <a href="addmedical.html"><button>Add Medical Records</button></a>
+    <a href="getmedical.html"><button>Fetch Medical Records</button></a>
+</center>
+ 
+
+    <h2 class="heading">Change Consultant Address</h2>
+    <div class="container">
+        <label for="patientIDChange">Healthcare ID:</label>
+        <input type="text" id="patientIDChange" required>
+        <label for="newDoctorAddress">New Address:</label>
+        <input type="text" id="newDoctorAddress" required>
+        <button onclick="changeDoctor()">Change </button>
+    </div>
+    <script defer src="doctor.js"></script>
+    <script defer src="app.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+          el: "body",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x233848
+        })
+        </script>
+</body>
+</html>
